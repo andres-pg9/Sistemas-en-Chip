@@ -1,0 +1,11 @@
+|sumador
+A => xor1_o.IN0
+A => and1_o.IN0
+B => xor1_o.IN1
+B => and1_o.IN1
+Cin => and2_o.IN1
+Cin => S.IN1
+S << S.DB_MAX_OUTPUT_PORT_TYPE
+Cout << Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
