@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Sep 12 17:18:47 2023
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : memoria
+Top-level Entity Name : memoria
+Family : Cyclone IV E
+Total logic elements : 3,078
+    Total combinational functions : 1,254
+    Dedicated logic registers : 1,824
+Total registers : 1824
+Total pins : 100
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
