@@ -1,0 +1,23 @@
+module leds (
+	input 		 clk_i,
+	input 		 rst_ni,
+	output [7:0] leds_o
+);
+
+	reg 	 [31:0]counter_w;
+	
+	always @ (posedge clk_i, negedge rst_ni)
+	begin
+		if (!rst_ni)
+			begin
+				counter_w <= 32'b0;
+			end
+		else
+			begin
+				counter_w <= counter_w + 1'b1;
+			end	
+	end
+	
+	assign leds_o = counter_w[23:16];
+
+endmodule
