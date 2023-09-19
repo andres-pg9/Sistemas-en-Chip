@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "leds_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rst_ni",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
