@@ -37,10 +37,15 @@ module PLL#(
 	// blocks in Single Port mode.  
 	assign q = ram[addr_reg];
 	
-	
-	mipll mipll_u0 (
+	/*mipll mipll_u0 (
 		.inclk0 (clk50_i),
 		.c0	  (clk1_w)
+	); */
+	
+	PLL2 mipll_u0 (
+		.clk_i (clk50_i),
+		.clk_o	  (clk1_w),
+		.rst_ni  (rst_ni)	
 	);
 	
 	

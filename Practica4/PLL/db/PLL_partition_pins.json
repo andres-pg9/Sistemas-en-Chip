@@ -30,6 +30,10 @@
 				{
 					"name" : "rst_ni",
 					"strict" : false
+				},
+				{
+					"name" : "clk50_i",
+					"strict" : false
 				}
 			]
 		}
