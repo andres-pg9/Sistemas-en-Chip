@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Oct 19 19:38:13 2023
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : practica_minios
+Top-level Entity Name : practica_minios
+Family : Cyclone IV E
+Total logic elements : 1,937
+    Total combinational functions : 1,692
+    Dedicated logic registers : 1,051
+Total registers : 1051
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 175,104
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

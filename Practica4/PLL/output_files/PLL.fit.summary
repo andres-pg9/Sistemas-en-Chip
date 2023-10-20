@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Sep 21 19:16:57 2023
+Fitter Status : Successful - Tue Oct 10 17:16:30 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : PLL
 Top-level Entity Name : PLL
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 63 / 22,320 ( < 1 % )
-    Total combinational functions : 62 / 22,320 ( < 1 % )
+Total logic elements : 69 / 22,320 ( < 1 % )
+    Total combinational functions : 68 / 22,320 ( < 1 % )
     Dedicated logic registers : 39 / 22,320 ( < 1 % )
 Total registers : 39
 Total pins : 10 / 154 ( 6 % )

@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Sep 21 19:16:52 2023
+Analysis & Synthesis Status : Successful - Tue Oct 10 17:16:26 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : PLL
 Top-level Entity Name : PLL
 Family : Cyclone IV E
-Total logic elements : 62
-    Total combinational functions : 62
+Total logic elements : 68
+    Total combinational functions : 68
     Dedicated logic registers : 39
 Total registers : 39
 Total pins : 10

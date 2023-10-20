@@ -8,6 +8,7 @@ module PLL#(
 );
 	wire clk1_w;
 	reg [5:0]counter_w;
+	reg [7:0] leds_w;    //Se creo este reg para trabajarlo en el MUX
 	wire we;
 	
 	assign we = 1'b0;
@@ -57,6 +58,15 @@ module PLL#(
 			counter_w = counter_w + 1'b1;
 	end
 
-	assign leds_o = counter_w;
+	
+	always @(*)
+	begin
+		if(clk1_w)
+			leds_w = counter_w;
+		else
+			leds_w = counter_w & 8'b0;
+	end
+	assign leds_o = leds_w;
+	
 
 endmodule

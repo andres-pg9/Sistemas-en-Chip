@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PLL
-Thu Sep 21 19:16:52 2023
+Tue Oct 10 17:16:26 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -44,13 +44,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 21 19:16:52 2023          ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 10 17:16:26 2023          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; PLL                                            ;
 ; Top-level Entity Name              ; PLL                                            ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 62                                             ;
-;     Total combinational functions  ; 62                                             ;
+; Total logic elements               ; 68                                             ;
+;     Total combinational functions  ; 68                                             ;
 ;     Dedicated logic registers      ; 39                                             ;
 ; Total registers                    ; 39                                             ;
 ; Total pins                         ; 10                                             ;
@@ -180,16 +180,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 62           ;
+; Estimated Total logic elements              ; 68           ;
 ;                                             ;              ;
-; Total combinational functions               ; 62           ;
+; Total combinational functions               ; 68           ;
 ; Logic element usage by number of LUT inputs ;              ;
 ;     -- 4 input functions                    ; 10           ;
 ;     -- 3 input functions                    ; 15           ;
-;     -- <=2 input functions                  ; 37           ;
+;     -- <=2 input functions                  ; 43           ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 27           ;
+;     -- normal mode                          ; 33           ;
 ;     -- arithmetic mode                      ; 35           ;
 ;                                             ;              ;
 ; Total registers                             ; 39           ;
@@ -202,8 +202,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; rst_ni~input ;
 ; Maximum fan-out                             ; 39           ;
-; Total fan-out                               ; 289          ;
-; Average fan-out                             ; 2.39         ;
+; Total fan-out                               ; 301          ;
+; Average fan-out                             ; 2.37         ;
 +---------------------------------------------+--------------+
 
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |PLL                       ; 62 (6)              ; 39 (6)                    ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |PLL                ; PLL         ; work         ;
+; |PLL                       ; 68 (12)             ; 39 (6)                    ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |PLL                ; PLL         ; work         ;
 ;    |PLL2:mipll_u0|         ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PLL|PLL2:mipll_u0  ; PLL2        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -252,18 +252,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 10                          ;
 ; cycloneiii_ff         ; 39                          ;
 ;     CLR               ; 39                          ;
-; cycloneiii_lcell_comb ; 63                          ;
+; cycloneiii_lcell_comb ; 69                          ;
 ;     arith             ; 35                          ;
 ;         2 data inputs ; 34                          ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 28                          ;
+;     normal            ; 34                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
+;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 14                          ;
 ;         4 data inputs ; 10                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.18                        ;
+; Average LUT depth     ; 3.09                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,7 +283,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Thu Sep 21 19:16:45 2023
+    Info: Processing started: Tue Oct 10 17:16:19 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PLL -c PLL
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -292,25 +293,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll.v
     Info (12023): Found entity 1: PLL File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll2.v
     Info (12023): Found entity 1: PLL2 File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL2.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at PLL.v(38): created implicit net for "q" File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at PLL.v(39): created implicit net for "q" File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 39
 Info (12127): Elaborating entity "PLL" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at PLL.v(38): object "q" assigned a value but never read File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 38
-Warning (10230): Verilog HDL assignment warning at PLL.v(38): truncated value with size 8 to match size of target (1) File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 38
-Info (12128): Elaborating entity "PLL2" for hierarchy "PLL2:mipll_u0" File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 49
+Warning (10036): Verilog HDL or VHDL warning at PLL.v(39): object "q" assigned a value but never read File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 39
+Warning (10230): Verilog HDL assignment warning at PLL.v(39): truncated value with size 8 to match size of target (1) File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 39
+Info (12128): Elaborating entity "PLL2" for hierarchy "PLL2:mipll_u0" File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 50
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "leds_o[6]" is stuck at GND File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 8
     Warning (13410): Pin "leds_o[7]" is stuck at GND File: C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica4/PLL/PLL.v Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 78 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 62 logic cells
+    Info (21061): Implemented 68 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Thu Sep 21 19:16:52 2023
+    Info: Processing ended: Tue Oct 10 17:16:26 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
 
 

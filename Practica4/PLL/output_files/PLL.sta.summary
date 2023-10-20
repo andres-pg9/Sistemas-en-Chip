@@ -3,15 +3,15 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk50_i'
-Slack : -2.826
-TNS   : -53.207
+Slack : -3.400
+TNS   : -58.171
 
 Type  : Slow 1200mV 85C Model Setup 'PLL2:mipll_u0|clk_o'
-Slack : -0.635
-TNS   : -2.420
+Slack : -0.701
+TNS   : -2.418
 
 Type  : Slow 1200mV 85C Model Hold 'PLL2:mipll_u0|clk_o'
-Slack : 0.359
+Slack : 0.361
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk50_i'
@@ -27,12 +27,12 @@ Slack : -1.000
 TNS   : -6.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk50_i'
-Slack : -2.494
-TNS   : -43.351
+Slack : -2.959
+TNS   : -47.798
 
 Type  : Slow 1200mV 0C Model Setup 'PLL2:mipll_u0|clk_o'
-Slack : -0.456
-TNS   : -1.622
+Slack : -0.508
+TNS   : -1.636
 
 Type  : Slow 1200mV 0C Model Hold 'PLL2:mipll_u0|clk_o'
 Slack : 0.319
@@ -51,11 +51,11 @@ Slack : -1.000
 TNS   : -6.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk50_i'
-Slack : -1.197
-TNS   : -16.413
+Slack : -1.532
+TNS   : -19.385
 
 Type  : Fast 1200mV 0C Model Setup 'PLL2:mipll_u0|clk_o'
-Slack : 0.085
+Slack : 0.049
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'PLL2:mipll_u0|clk_o'
@@ -68,7 +68,7 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk50_i'
 Slack : -3.000
-TNS   : -37.782
+TNS   : -37.806
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PLL2:mipll_u0|clk_o'
 Slack : -1.000
