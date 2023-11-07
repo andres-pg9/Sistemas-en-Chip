@@ -1,0 +1,12 @@
+19:39:41 **** Incremental Build of configuration Nios II for project contador ****
+wsl make all 
+Info: Building /mnt/c/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica5/software/contador_bsp/
+make --no-print-directory -C /mnt/c/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica5/software/contador_bsp/
+[BSP build complete]
+[contador build complete]
+19:39:48 **** Build of configuration Nios II for project contador ****
+wsl make all 
+Info: Building /mnt/c/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica5/software/contador_bsp/
+make --no-print-directory -C /mnt/c/Users/andre/Documents/GitHub/Sistemas-en-Chip/Practica5/software/contador_bsp/
+[BSP build complete]
+[contador build complete]

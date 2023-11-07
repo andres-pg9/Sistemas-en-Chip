@@ -1,0 +1,36 @@
+module UART(
+	//Señales generales
+	input	clk_i,
+	//Señales Tx (transmisión)
+	output wire tx_o, //Transmisión
+	input txen_i,		//Habilitación de transmisión
+	input txstart_i, 	//Señal de inicio
+	input [7:0] txin_i,
+	output txdone_o,
+	output txbusy_o
+);
+
+	wire txclk_o;
+	wire rxclk_o;
+
+BaudRateGenerator #(
+    .CLOCK_RATE 	(50000000), // board internal clock (def == 100MHz)
+    .BAUD_RATE  	(9600)
+)	
+baudgen_u0 (
+    .clk		(clk_i), // board clock
+    .rxClk	(rxclk_o), // baud rate for rx
+    .txClk	(txclk_o) // baud rate for tx
+);
+
+Uart8Transmitter uarttransmit_u0(
+    .clk		(txclk_o),   	// baud rate
+    .en		(txen_i),// enable
+    .start	(txstart_i),// start of transaction
+    .in		(txin_i),   	// data to transmit
+    .out		(tx_o),  // tx
+    .done	(txdone_o),  		// end on transaction
+    .busy   (txbusy_o)			// transaction is in process
+);
+
+endmodule

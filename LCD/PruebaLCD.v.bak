@@ -1,0 +1,62 @@
+module PruebaLCD(
+	input clk_i,
+	input rst_ni
+	output lcd_on,
+	output lcd_blon,
+	output lcd_rw,
+	output lcd_en,
+	output lcd_rs,
+	output [7:0] lcd_data
+);
+	wire [255:0] mensaje_w;
+	//LINEA 1
+	assign mensaje_w[255:248] = 8'h45; //E
+	assign mensaje_w[247:240] = 8'h51; //Q
+	assign mensaje_w[239:232] = 8'h55; //U
+	assign mensaje_w[231:224] = 8'h49; //I
+	assign mensaje_w[223:216] = 8'h50;
+	assign mensaje_w[215:208] = 8'h4F;
+	assign mensaje_w[207:200] = 8'h20;
+	assign mensaje_w[199:192] = 8'h33;
+	assign mensaje_w[191:184] = 8'h20;
+	assign mensaje_w[183:176] = 8'h53;
+	assign mensaje_w[175:168] = 8'h49;
+	assign mensaje_w[167:160] = 8'h20;
+	assign mensaje_w[159:152] = 8'h56;
+	assign mensaje_w[151:144] = 8'h41;
+	assign mensaje_w[143:136] = 8'h20;
+	assign mensaje_w[135:128] = 8'h41;
+	//LINEA 2
+	assign mensaje_w[127:120] = 8'h50; 
+	assign mensaje_w[119:112] = 8'h41; 
+	assign mensaje_w[111:104] = 8'h53;
+	assign mensaje_w[103:96] = 8'h41;
+	assign mensaje_w[95:88] = 8'h52;
+	assign mensaje_w[87:80] = 8'h20;
+	assign mensaje_w[79:72] = 8'h4C;
+	assign mensaje_w[71:64] = 8'h41;
+	assign mensaje_w[63:56] = 8'h20;
+	assign mensaje_w[55:48] = 8'h4D;
+	assign mensaje_w[47:40] = 8'h41;
+	assign mensaje_w[39:32] = 8'h54;
+	assign mensaje_w[31:24] = 8'h45;
+	assign mensaje_w[23:16] = 8'h52;
+	assign mensaje_w[15:8] = 8'h49;
+	assign mensaje_w[7:0] = 8'h41;
+
+
+
+LCD lcd_u0(											
+	.CLK			(clk_i),
+	.RST_N		(rst_ni),
+	.MP			(mensaje_w),
+	.LCD_ON		(lcd_on),														
+	.LCD_BLON	(lcd_blon),													
+	.LCD_RW		(lcd_rw),														
+	.LCD_EN		(lcd_en),														
+	.LCD_RS		(lcd_rs),														
+	.LCD_DATA	(lcd_data)														
+);		
+
+
+endmodule

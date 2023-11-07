@@ -1,7 +1,7 @@
-Fitter Status : Successful - Mon Oct 16 19:17:22 2023
+Fitter Status : Successful - Wed Oct 25 23:18:47 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : minios
-Top-level Entity Name : minios
+Top-level Entity Name : minios_principal
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final

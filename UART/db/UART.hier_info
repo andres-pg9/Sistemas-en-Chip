@@ -1,0 +1,75 @@
+|UART
+clk_i => clk_i.IN1
+tx_o <= Uart8Transmitter:uarttransmit_u0.out
+txen_i => txen_i.IN1
+txstart_i => txstart_i.IN1
+txin_i[0] => txin_i[0].IN1
+txin_i[1] => txin_i[1].IN1
+txin_i[2] => txin_i[2].IN1
+txin_i[3] => txin_i[3].IN1
+txin_i[4] => txin_i[4].IN1
+txin_i[5] => txin_i[5].IN1
+txin_i[6] => txin_i[6].IN1
+txin_i[7] => txin_i[7].IN1
+txdone_o <= Uart8Transmitter:uarttransmit_u0.done
+txbusy_o <= Uart8Transmitter:uarttransmit_u0.busy
+
+
+|UART|BaudRateGenerator:baudgen_u0
+clk => txClk~reg0.CLK
+clk => txCounter[0].CLK
+clk => txCounter[1].CLK
+clk => txCounter[2].CLK
+clk => txCounter[3].CLK
+clk => txCounter[4].CLK
+clk => txCounter[5].CLK
+clk => txCounter[6].CLK
+clk => txCounter[7].CLK
+clk => txCounter[8].CLK
+clk => txCounter[9].CLK
+clk => txCounter[10].CLK
+clk => txCounter[11].CLK
+clk => rxClk~reg0.CLK
+clk => rxCounter[0].CLK
+clk => rxCounter[1].CLK
+clk => rxCounter[2].CLK
+clk => rxCounter[3].CLK
+clk => rxCounter[4].CLK
+clk => rxCounter[5].CLK
+clk => rxCounter[6].CLK
+clk => rxCounter[7].CLK
+rxClk <= rxClk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+txClk <= txClk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART|Uart8Transmitter:uarttransmit_u0
+clk => data[0].CLK
+clk => data[1].CLK
+clk => data[2].CLK
+clk => data[3].CLK
+clk => data[4].CLK
+clk => data[5].CLK
+clk => data[6].CLK
+clk => data[7].CLK
+clk => bitIdx[0].CLK
+clk => bitIdx[1].CLK
+clk => bitIdx[2].CLK
+clk => busy~reg0.CLK
+clk => done~reg0.CLK
+clk => out~reg0.CLK
+clk => state~6.DATAIN
+en => always0.IN0
+start => always0.IN1
+in[0] => data.DATAB
+in[1] => data.DATAB
+in[2] => data.DATAB
+in[3] => data.DATAB
+in[4] => data.DATAB
+in[5] => data.DATAB
+in[6] => data.DATAB
+in[7] => data.DATAB
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+done <= done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+busy <= busy~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
