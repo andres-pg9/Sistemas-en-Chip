@@ -1,0 +1,101 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\andre\Documents\GitHub\Sistemas-en-Chip\myfirst_niosii\DE0_NANO_SOPC.qsys --block-symbol-file --output-directory=C:\Users\andre\Documents\GitHub\Sistemas-en-Chip\myfirst_niosii\DE0_NANO_SOPC --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading myfirst_niosii/DE0_NANO_SOPC.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 22.1]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_gen2 22.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 22.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 22.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pio_led [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_led
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE0_NANO_SOPC.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: DE0_NANO_SOPC.pio_led: pio_led.external_connection must be exported, or connected to a matching conduit.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\andre\Documents\GitHub\Sistemas-en-Chip\myfirst_niosii\DE0_NANO_SOPC.qsys --synthesis=VERILOG --output-directory=C:\Users\andre\Documents\GitHub\Sistemas-en-Chip\myfirst_niosii\DE0_NANO_SOPC\synthesis --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading myfirst_niosii/DE0_NANO_SOPC.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 22.1]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_gen2 22.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 22.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 22.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pio_led [altera_avalon_pio 22.1]
+Progress: Parameterizing module pio_led
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE0_NANO_SOPC.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: DE0_NANO_SOPC.pio_led: pio_led.external_connection must be exported, or connected to a matching conduit.
+Info: DE0_NANO_SOPC: Generating DE0_NANO_SOPC "DE0_NANO_SOPC" for QUARTUS_SYNTH
+Info: cpu: "DE0_NANO_SOPC" instantiated altera_nios2_gen2 "cpu"
+Info: jtag_uart: Starting RTL generation for module 'DE0_NANO_SOPC_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE0_NANO_SOPC_jtag_uart --dir=C:/Users/andre/AppData/Local/Temp/alt9675_1874692474919790157.dir/0002_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/andre/AppData/Local/Temp/alt9675_1874692474919790157.dir/0002_jtag_uart_gen//DE0_NANO_SOPC_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'DE0_NANO_SOPC_jtag_uart'
+Info: jtag_uart: "DE0_NANO_SOPC" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: onchip_memory2: Starting RTL generation for module 'DE0_NANO_SOPC_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE0_NANO_SOPC_onchip_memory2 --dir=C:/Users/andre/AppData/Local/Temp/alt9675_1874692474919790157.dir/0003_onchip_memory2_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/andre/AppData/Local/Temp/alt9675_1874692474919790157.dir/0003_onchip_memory2_gen//DE0_NANO_SOPC_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'DE0_NANO_SOPC_onchip_memory2'
+Info: onchip_memory2: "DE0_NANO_SOPC" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: pio_led: Starting RTL generation for module 'DE0_NANO_SOPC_pio_led'
+Info: pio_led:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE0_NANO_SOPC_pio_led --dir=C:/Users/andre/AppData/Local/Temp/alt9675_1874692474919790157.dir/0004_pio_led_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/andre/AppData/Local/Temp/alt9675_1874692474919790157.dir/0004_pio_led_gen//DE0_NANO_SOPC_pio_led_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_led: Done RTL generation for module 'DE0_NANO_SOPC_pio_led'
+Info: pio_led: "DE0_NANO_SOPC" instantiated altera_avalon_pio "pio_led"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "DE0_NANO_SOPC" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "DE0_NANO_SOPC" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "DE0_NANO_SOPC" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'DE0_NANO_SOPC_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/22.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/22.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=DE0_NANO_SOPC_cpu_cpu --dir=C:/Users/andre/AppData/Local/Temp/alt9675_1874692474919790157.dir/0007_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/22.1std/quartus/bin64/ --verilog --config=C:/Users/andre/AppData/Local/Temp/alt9675_1874692474919790157.dir/0007_cpu_gen//DE0_NANO_SOPC_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2023.11.14 17:39:50 (*) Starting Nios II generation
+Info: cpu: # 2023.11.14 17:39:50 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2023.11.14 17:39:50 (*)   Creating all objects for CPU
+Info: cpu: # 2023.11.14 17:39:50 (*)     Testbench
+Info: cpu: # 2023.11.14 17:39:50 (*)     Instruction decoding
+Info: cpu: # 2023.11.14 17:39:50 (*)       Instruction fields
+Info: cpu: # 2023.11.14 17:39:50 (*)       Instruction decodes
+Info: cpu: # 2023.11.14 17:39:50 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2023.11.14 17:39:50 (*)       Instruction controls
+Info: cpu: # 2023.11.14 17:39:50 (*)     Pipeline frontend
+Info: cpu: # 2023.11.14 17:39:50 (*)     Pipeline backend
+Info: cpu: # 2023.11.14 17:39:51 (*)   Generating RTL from CPU objects
+Info: cpu: # 2023.11.14 17:39:51 (*)   Creating plain-text RTL
+Info: cpu: # 2023.11.14 17:39:52 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'DE0_NANO_SOPC_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: cpu_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_data_master_limiter"
+Info: Reusing file C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/myfirst_niosii/DE0_NANO_SOPC/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/andre/Documents/GitHub/Sistemas-en-Chip/myfirst_niosii/DE0_NANO_SOPC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: DE0_NANO_SOPC: Done "DE0_NANO_SOPC" with 23 modules, 44 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
